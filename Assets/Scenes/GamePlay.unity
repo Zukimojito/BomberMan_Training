@@ -303,6 +303,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _SolidWallCorner
+      value: 
+      objectReference: {fileID: 7660153832752385604, guid: f585705b8b20f2b41855200a6e871f3c,
+        type: 3}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _SolidWall
+      value: 
+      objectReference: {fileID: 919132149155446097, guid: 99df28f4ff688c740aa74a1e37ad3bfb,
+        type: 3}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _SolidWallBorner
+      value: 
+      objectReference: {fileID: 4521080478169797860, guid: 690142b550a270841aee1e0f0878f83d,
+        type: 3}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _width
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _height
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 45255949425424280, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: m_Name

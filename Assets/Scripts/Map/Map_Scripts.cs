@@ -19,7 +19,7 @@ namespace Bomberboy.Map
         [SerializeField] [OddRange(3, 30)] private int _height;
         public int height => _height;
 
-        [SerializeField] private GameObject _SolidWall;
+        [SerializeField] private GameObject _SolidWallBorner;
         [SerializeField] private GameObject _SolidWallCorner;
 
 
@@ -30,18 +30,42 @@ namespace Bomberboy.Map
             _MapData = new GameObject[_width+2,_height+2];
             
             SetGOAtPos(-1,-1,Instantiate(_SolidWallCorner,Vector3.zero,Quaternion.Euler(0,0,0),transform));
-            SetGOAtPos(-1,_height,Instantiate(_SolidWallCorner,Vector3.zero, Quaternion.Euler(0,0,0),transform));
-            SetGOAtPos(_width,-1,Instantiate(_SolidWallCorner,Vector3.zero,Quaternion.Euler(0,0,0),transform));
-            SetGOAtPos(_width,_height,Instantiate(_SolidWallCorner,Vector3.zero, Quaternion.Euler(0,0,0),transform));
+            SetGOAtPos(-1,_height,Instantiate(_SolidWallCorner,Vector3.zero, Quaternion.Euler(0,90,0),transform));
+            SetGOAtPos(_width,_height,Instantiate(_SolidWallCorner,Vector3.zero, Quaternion.Euler(0,180,0),transform));
+            SetGOAtPos(_width,-1,Instantiate(_SolidWallCorner,Vector3.zero,Quaternion.Euler(0,270,0),transform));
+            
+
+            for (int x = 0; x < _width; x++)
+            {
+                SetGOAtPos(x,-1,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,0,0),transform));
+            }
+            for (int y = 0; y < _height; y++)
+            {
+                SetGOAtPos(-1,y,Instantiate(_SolidWallBorner,Vector3.zero,Quaternion.Euler(0,90,0),transform));
+            }
+
+            for (int x = 0; x < _width; x++)
+            {
+                SetGOAtPos(x,_height,Instantiate(_SolidWallBorner,Vector3.zero,Quaternion.Euler(0,180,0),transform));
+            }
+
+            for (int y = 0; y < _height; y++)
+            {
+                SetGOAtPos(_width,y,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,270,0),transform));
+            }
+            
+            
         }
 
         private GameObject GetGoAtPos(int x, int y)
         {
+            HorsLimiteOrNot(x,y,true);
             return _MapData[x + 1, y + 1];
         }
 
         private void SetGOAtPos(int x, int y, GameObject Go)
         {
+            HorsLimiteOrNot(x, y, true);
             GameObject currentGo = GetGoAtPos(x, y);
             if (!ReferenceEquals(currentGo, null))
             {
