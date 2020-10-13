@@ -37,24 +37,15 @@ namespace Bomberboy.Map
 
             for (int x = 0; x < _width; x++)
             {
-                SetGOAtPos(x,-1,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,0,0),transform));
+                SetGOAtPos(x,-1,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,0,0),transform));        //WALL BOT AXE x
+                SetGOAtPos(x,_height,Instantiate(_SolidWallBorner,Vector3.zero,Quaternion.Euler(0,180,0),transform));    //WALL TOP AXE x
             }
             for (int y = 0; y < _height; y++)
             {
-                SetGOAtPos(-1,y,Instantiate(_SolidWallBorner,Vector3.zero,Quaternion.Euler(0,90,0),transform));
+                SetGOAtPos(-1,y,Instantiate(_SolidWallBorner,Vector3.zero,Quaternion.Euler(0,90,0),transform));    //WALL LEFT AXE Y
+                SetGOAtPos(_width,y,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,270,0),transform));    //WALL RIGHT AXE Y
             }
 
-            for (int x = 0; x < _width; x++)
-            {
-                SetGOAtPos(x,_height,Instantiate(_SolidWallBorner,Vector3.zero,Quaternion.Euler(0,180,0),transform));
-            }
-
-            for (int y = 0; y < _height; y++)
-            {
-                SetGOAtPos(_width,y,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,270,0),transform));
-            }
-            
-            
         }
 
         private GameObject GetGoAtPos(int x, int y)
