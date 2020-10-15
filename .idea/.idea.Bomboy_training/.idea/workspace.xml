@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a90fd1f-c54a-47ce-b4dc-8c3779c2f7db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Character1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Character1.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -14,6 +18,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/TerrainType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -21,8 +26,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Map_Scripts.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Map/TerrainType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +81,8 @@
       <option name="presentableId" value="Default" />
       <updated>1602428754086</updated>
       <workItem from="1602428756467" duration="3352000" />
-      <workItem from="1602598145958" duration="5723000" />
+      <workItem from="1602598145958" duration="7147000" />
+      <workItem from="1602765221873" duration="5592000" />
     </task>
     <servers />
   </component>
@@ -96,5 +103,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="807" y="434" key="VCS.ChangelistChooser" timestamp="1602770810909">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="807" y="434" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602770810909" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602766777534">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602766777534" />
   </component>
 </project>

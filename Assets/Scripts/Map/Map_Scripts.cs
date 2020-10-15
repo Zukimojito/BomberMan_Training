@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
 using System.Security.Cryptography;
 using GameManagers;
 using UnityEngine;
-
-
+using Random = System.Random;
 
 
 namespace Bomberboy.Map
@@ -13,21 +13,27 @@ namespace Bomberboy.Map
     public class Map_Scripts : MonoBehaviour
     {
         
-        [SerializeField] [OddRange(3,30)] private int _width;
+        [SerializeField]
+        [OddRange(3, 30)]
+        private int _width;
         public int width => _width;
-
-        [SerializeField] [OddRange(3, 30)] private int _height;
+        
+        [SerializeField] 
+        [OddRange(3, 30)] 
+        private int _height;
         public int height => _height;
 
         [SerializeField] private GameObject _SolidWallBorner;
         [SerializeField] private GameObject _SolidWallCorner;
-
-
-        private GameObject[ , ] _MapData;
+        [SerializeField] private GameObject _SolidWall;
+        [SerializeField] private GameObject _floorPrefab;
+        
+        private GameObject[ , ] _mapData;
+        private Random _random;
 
         private void Awake()
         {
-            _MapData = new GameObject[_width+2,_height+2];
+            _mapData = new GameObject[_width+2,_height+2];
             
             SetGOAtPos(-1,-1,Instantiate(_SolidWallCorner,Vector3.zero,Quaternion.Euler(0,0,0),transform));
             SetGOAtPos(-1,_height,Instantiate(_SolidWallCorner,Vector3.zero, Quaternion.Euler(0,90,0),transform));
@@ -46,12 +52,44 @@ namespace Bomberboy.Map
                 SetGOAtPos(_width,y,Instantiate(_SolidWallBorner,Vector3.zero, Quaternion.Euler(0,270,0),transform));    //WALL RIGHT AXE Y
             }
 
+            _random = new Random((int)DateTime.Now.Ticks);
+            
+            for (int x = 0; x < _width; x++)
+            {
+                for (int y = 0; y < _height; y++)
+                {
+                    if ((x & 1) == 1 && (y & 1) == 1)
+                    {
+                        SetGOAtPos(x,y,Instantiate(_SolidWall));
+                        continue;
+                    }
+                    
+                    if (Between(x, 0, 1) && Between(y, 0, 1) ||
+                        Between(x, _width - 2, _width - 1) && Between(y, 0, 1) ||
+                        Between(x, 0, 1) && Between(y, _height - 2, _height - 1) ||
+                        Between(x, _width - 2, _width - 1) && Between(y, _height - 2, _height - 1))
+                    {
+                        SetGOAtPos(x, y, Instantiate(_floorPrefab, transform));
+                        continue;
+                    }
+                    
+                    
+                    
+                }
+            }
+            
+            
+            
+            
+            
+            
+            
         }
 
         private GameObject GetGoAtPos(int x, int y)
         {
             HorsLimiteOrNot(x,y,true);
-            return _MapData[x + 1, y + 1];
+            return _mapData[x + 1, y + 1];
         }
 
         private void SetGOAtPos(int x, int y, GameObject Go)
@@ -64,7 +102,7 @@ namespace Bomberboy.Map
             }
             
             Go.transform.position = new Vector3(x,0,y);
-            _MapData[x + 1, y + 1] = Go;
+            _mapData[x + 1, y + 1] = Go;
         }
         
         
@@ -72,14 +110,14 @@ namespace Bomberboy.Map
         {
             if (Limite)
             {
-                if (!between(x, -1, _width) || !between(y,-1,_height))
+                if (!Between(x, -1, _width) || !Between(y,-1,_height))
                 {
                     throw new InvalidCastException("Error, The Limit of your range has been exceeded");
                 }
             }
             else
             {
-                if (!between(x, _width, -1) || !between(y, _height, -1))
+                if (!Between(x, _width, -1) || !Between(y, _height, -1))
                 {
                     throw new InvalidCastException("Error, The Limit of your range has been exceeded");
                 }
@@ -87,7 +125,7 @@ namespace Bomberboy.Map
             
         }
         
-        public static bool between(int value, int min, int max)
+        public static bool Between(int value, int min, int max)
         {
             return value >= min && value <= max;
         }

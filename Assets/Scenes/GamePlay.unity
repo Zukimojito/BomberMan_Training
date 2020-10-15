@@ -313,7 +313,7 @@ PrefabInstance:
         type: 3}
       propertyPath: _SolidWall
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 99df28f4ff688c740aa74a1e37ad3bfb,
+      objectReference: {fileID: 1403538031465306590, guid: 469e7fe770c1e01469dfb37540ab3d7a,
         type: 3}
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
@@ -324,13 +324,19 @@ PrefabInstance:
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: _width
-      value: 3
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: _height
-      value: 3
+      value: 42
       objectReference: {fileID: 0}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _floorPrefab
+      value: 
+      objectReference: {fileID: 7941576034072076392, guid: 3576f0a85a678044899e0c938ebdd55b,
+        type: 3}
     - target: {fileID: 45255949425424280, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: m_Name
