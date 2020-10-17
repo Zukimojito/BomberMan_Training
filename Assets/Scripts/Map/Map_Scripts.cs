@@ -27,7 +27,15 @@ namespace Bomberboy.Map
         [SerializeField] private GameObject _SolidWallCorner;
         [SerializeField] private GameObject _SolidWall;
         [SerializeField] private GameObject _floorPrefab;
+        [SerializeField] private GameObject _BreakableWallPrefab;
+
+        [SerializeField] 
+        [Range(0.0f,1.0f)]
+        private float _breakableWallProbability;
+
+        public float BreakableWallProbability => _breakableWallProbability;
         
+
         private GameObject[ , ] _mapData;
         private Random _random;
 
@@ -73,6 +81,14 @@ namespace Bomberboy.Map
                         continue;
                     }
                     
+                    if (_random.NextDouble() < _breakableWallProbability)
+                    {
+                        SetGOAtPos(x, y, Instantiate(_BreakableWallPrefab, transform));
+                    }
+                    else
+                    {
+                        SetGOAtPos(x, y, Instantiate(_floorPrefab, transform));
+                    }
                     
                     
                 }

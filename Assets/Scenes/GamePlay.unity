@@ -324,12 +324,12 @@ PrefabInstance:
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: _width
-      value: 28
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: _height
-      value: 42
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
@@ -337,6 +337,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7941576034072076392, guid: 3576f0a85a678044899e0c938ebdd55b,
         type: 3}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _BreakableWallPrefab
+      value: 
+      objectReference: {fileID: 7294447606178007351, guid: acbd62d1b24f3b642a8c204281ebc4f7,
+        type: 3}
+    - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
+        type: 3}
+      propertyPath: _breakableWallProbability
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 45255949425424280, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: m_Name
