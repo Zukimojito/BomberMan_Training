@@ -14,12 +14,12 @@ namespace Bomberboy.Map
     {
         
         [SerializeField]
-        [OddRange(3, 30)]
+        [OddRangeAttribute(3, 30)]
         private int _width;
-        public int width => _width;
+        public int Width => _width;
         
         [SerializeField] 
-        [OddRange(3, 30)] 
+        [OddRangeAttribute(3, 30)]
         private int _height;
         public int height => _height;
 
@@ -81,7 +81,7 @@ namespace Bomberboy.Map
                         continue;
                     }
                     
-                    if (_random.NextDouble() < _breakableWallProbability)
+                    if (_random.NextDouble() < _breakableWallProbability) // _random.NextDouble() return une valeur float aléatoire entre 0.0 et 1.0
                     {
                         SetGOAtPos(x, y, Instantiate(_BreakableWallPrefab, transform));
                     }

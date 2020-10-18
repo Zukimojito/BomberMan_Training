@@ -43,5 +43,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445d5f728d9a5874dba09d00a03ad62d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _width: 3
+  _width: -17
   _height: 3
+  _SolidWallBorner: {fileID: 0}
+  _SolidWallCorner: {fileID: 0}
+  _SolidWall: {fileID: 0}
+  _floorPrefab: {fileID: 0}
+  _BreakableWallPrefab: {fileID: 0}
+  _breakableWallProbability: 0

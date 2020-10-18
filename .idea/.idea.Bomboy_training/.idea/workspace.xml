@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5a90fd1f-c54a-47ce-b4dc-8c3779c2f7db" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Bomboy_training/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Map.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,16 +20,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/TerrainType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Map.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Editor/OddEditor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Map_Scripts.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/TerrainType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Map/Map_Scripts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManagers/OddRange_Attribut.cs" />
+        <option value="$PROJECT_DIR$/Assets/Editor/OddEditor.cs" />
       </list>
     </option>
   </component>
@@ -80,7 +89,9 @@
       <workItem from="1602598145958" duration="7147000" />
       <workItem from="1602765221873" duration="5592000" />
       <workItem from="1602775639716" duration="673000" />
-      <workItem from="1602969733988" duration="441000" />
+      <workItem from="1602969733988" duration="764000" />
+      <workItem from="1603021332716" duration="4473000" />
+      <workItem from="1603039548526" duration="4539000" />
     </task>
     <servers />
   </component>

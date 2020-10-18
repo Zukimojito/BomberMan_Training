@@ -324,12 +324,12 @@ PrefabInstance:
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: _width
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
       propertyPath: _height
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -4732298869735988088, guid: 964695e547c073e44907f75da289b3a8,
         type: 3}
